@@ -1,14 +1,21 @@
 <?php
-include "code/header.php"; ?>
+session_start();
+include "code.header.login.check.php";
+
+?>
+
+
 <title>Subnet | Integration </title>
 
 
 <div class="row">
     <div class="col-2">
         <h1>Fortify Your Environment</h1>
-        <p>Welcome to Subnet Integration Services<br>
+        <p>
+            Welcome to Subnet Integration Services<br>
+            <a href="store.php" class="btn">Explore Now &#8594;</a>
         </p>
-        <a href="" class="btn">Explore Now &#8594;</a>
+        
     </div>
     <div class="col-2">
         <img src="images/fortigate.png">

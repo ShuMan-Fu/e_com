@@ -1,6 +1,8 @@
 <?php
 
 
+
+
 session_start();
 
 if (isset($_GET["id"])) {
@@ -10,7 +12,7 @@ if (isset($_GET["id"])) {
     exit();
 }
 
-include "code/connection.php";
+include "connection.php";
 
 $sql = "SELECT * FROM items WHERE items.item_id = $item_id";
 $result = mysqli_query($conn, $sql);
@@ -30,13 +32,11 @@ if (mysqli_num_rows($result) > 0) {
     echo "0 results";
 }
 
-
+include "code.header.login.check.php"; 
 ?>
+
+
 <title>Subnet | Product Details </title>
-<?php include "code/header.php"; ?>
-
-
-
 
 
 
@@ -77,7 +77,7 @@ if (mysqli_num_rows($result) > 0) {
     <div class="product-list">
         <div class="row">
 
-            <?php include "code/code.latestitems.php"; ?>
+            <?php include "code.latestitems.php"; ?>
 
         </div>
     </div>
@@ -90,4 +90,4 @@ if (mysqli_num_rows($result) > 0) {
 
 <!-----FOOTER-->
 
-<?php include "code/footer.php"; ?>
+<?php include "footer.php"; ?>

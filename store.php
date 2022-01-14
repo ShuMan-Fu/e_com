@@ -1,4 +1,6 @@
-<?php include "code/header.php"; ?>
+<?php 
+session_start();
+include "code.header.login.check.php"; ?>
 <title>Subnet | Products </title>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -12,7 +14,7 @@
         <div class="row">
 
             <?php
-            include "code/code.selectFromItems.php";
+            include "code.selectFromItems.php";
 
             ?>
 

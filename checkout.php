@@ -1,12 +1,7 @@
-<?php include "code/header.php"; ?>
+<?php 
+session_start();
+include "code.header.login.check.php"; ?>
 <h2 class="title">Check out</h2>
-
-
-
-
-
-
-
 
 
 <style>
@@ -212,12 +207,4 @@
 
 
 
-
-
-
-
-
-
-
-
-<?php include "code/footer.php"; ?>
+<?php include "footer.php"; ?>

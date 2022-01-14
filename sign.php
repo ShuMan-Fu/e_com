@@ -40,7 +40,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <title>Sign Up</title>
 
-<?php include "code/header.php"; ?>
+<?php 
+session_start();
+include "code.header.login.check.php"; 
+?>
 
 <h2 class="title">Please sign up</h2>
 <link rel="stylesheet" href="css/style3.css">

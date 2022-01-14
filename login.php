@@ -4,7 +4,7 @@ session_start();
 if (isset($_POST["login"])) {
 
 
-    include "code/connection.php";
+    include "connection.php";
 
 
     $email = $_POST["email"];
@@ -45,31 +45,9 @@ if (isset($_POST["login"])) {
     }
 }
 
-
-
-
-
-include "code/header.php";
-include "code/code.alerts.php";
+include "code.header.login.check.php";
+include "code.alerts.php";
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <style>

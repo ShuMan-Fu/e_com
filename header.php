@@ -13,20 +13,29 @@
 <div class="container">
     <div class="navbar">
         <div class="logo">
-            <img src="images/fortinet logo.png" width="50px">
+            <img src="images/fortinet logo.png" width="50px" height="50px">
 
         </div>
         <nav>
             <ul id="menuitems">
-                <li><a href="index.php">Home</a></li>
+            <li><a href="index.php">Home</a></li>
                 <li><a href="portfolio.php">Portfolio</a></li>
                 <li><a href="store.php">Products</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="registration.php">Register</a></li>
-                
+                <li>
+                    <form class="form-inline">
+                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </li>
 
             </ul>
+            <a href="cart.php"><img src="images/cart.png" width="50px" height="50px"></a>
+            
         </nav>
+        <img src="images/images1/menu.png" class="menu-icon" onclick="menutoggle()">
+        
         
 
     </div>

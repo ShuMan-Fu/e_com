@@ -1,9 +1,10 @@
 <?php
 session_start();
-include "code/code.isLoggedIn.php";
-include "code/code.viewcart.php";
-include "code/header.php";
-include "code/code.alerts.php";
+include "code.isLoggedIn.php";
+include "code.viewcart.php";
+include "code.header.login.check.php";
+include "code.alerts.php";
+include "code.points.php";
 ?>
 
 
@@ -98,7 +99,7 @@ include "code/code.alerts.php";
         <div class="card-header bg-dark text-light">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             Shipping cart
-            <a href="" class="btn btn-outline-info btn-sm pull-right">Continue shopping</a>
+            <a href="store.php" class="btn btn-outline-info btn-sm pull-right">Continue shopping </a>
             <div class="clearfix"></div>
         </div>
         <div class="card-body">
@@ -183,17 +184,15 @@ include "code/code.alerts.php";
             <div class="coupon col-md-5 col-sm-5 no-padding-left pull-left">
                 <div class="row">
                     <div class="col-6">
-                        <input type="text" class="form-control" placeholder="cupone code">
+                        <h5><label for="SpecialNotes">Reward Points: <?php echo ceil($points)?></label></h5>
                     </div>
-                    <div class="col-6">
-                        <input type="submit" class="btn btn-default" value="Use cupone">
-                    </div>
+                   
                 </div>
             </div>
             <div class="pull-right" style="margin: 10px">
                 <a href="checkout.php" class="btn btn-success pull-right">Checkout</a>
                 <div class="pull-right" style="margin: 5px">
-                    Total price: <b>$<?php echo number_format($subtotal, 2); ?></b>
+                    Total price: <b>$<?php echo number_format($total, 2); ?></b>
                 </div>
             </div>
         </div>
@@ -202,4 +201,4 @@ include "code/code.alerts.php";
 
 
 
-<?php include "code/footer.php"; ?>
+<?php include "footer.php"; ?>

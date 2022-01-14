@@ -15,7 +15,8 @@ if (isset($_POST["registration"])) {
     $password = $_POST["password"];
     $cpassword1 = $_POST["cpassword"];
      
-
+    $sql = "SELECT * from users where email = '$email'";
+    
     $password = password_hash($password, PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `email`, `password`, `cpassword` , `address` , `reg_date`, `user_type`) VALUES (NULL, '$first_name', '$last_name', '$email', '$password' , '$password1' , '$address', current_timestamp(), 'user');";

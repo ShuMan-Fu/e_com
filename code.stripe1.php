@@ -16,8 +16,8 @@
 
 
 <script>
-    var stripe = Stripe('ADD_YOUR_PUBLIC_KEY_HERE');
-    alert("Remember to add your stripe public key and secret key in code.stripe1 and code.stripe2. Remove this code from code.stripe1");
+    var stripe = Stripe('pk_test_51KGbQwIU8pWw3t4vrmLWnlxe2VV0SfcRa8qJVL7DwpcSt1Y15wKIjV9wPJXzXUBvZNsuCQlI6RV5QU2gHBisfSnz00VaiQWE1F');
+    //alert("Remember to add your stripe public key and secret key in code.stripe1 and code.stripe2. Remove this code from code.stripe1");
 
     var elements = stripe.elements();
     var cardElement = elements.create('card');
